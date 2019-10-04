@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A cli toolset for FE developer created by Echi",
   "bin": {
-    "luchx": "bin/cli.js"
+    "luchx": "bin/luchx.js"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,8 @@
     "fs-extra": "^8.1.0",
     "inquirer": "^7.0.0",
     "ora": "^4.0.2",
-    "semver": "^6.3.0"
+    "semver": "^6.3.0",
+    "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
