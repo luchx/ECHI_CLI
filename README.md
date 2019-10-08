@@ -9,7 +9,7 @@
 ## 命令
 
 ```shell
-Usage: cli <command> [options]
+Usage: luchx <command> [options]
 
 Options:
   -V, --version      output the version number
