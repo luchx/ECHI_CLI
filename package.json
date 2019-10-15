@@ -22,6 +22,23 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "lint": "eslint --fix lib/**/*.js bin/*",
+    "precommit": "lint-staged"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "lib/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "bin/*": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
